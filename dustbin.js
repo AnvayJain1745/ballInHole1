@@ -1,12 +1,12 @@
 class dustbin{
-    constructor() {
+    constructor(x,y,width,height) {
         var options = {
-            isStatic:false,
+            isStatic:true,
             restitution:0.7,
             friction:1.0,
             density:1.2
         }
-        this.body = Bodies.rectangle(this.x,this.y,width,height,options);
+        this.body = Bodies.rectangle(x,y,width,height,options);
         this.width=width;
         this.height=height
         World.add(world, this.body);
@@ -20,7 +20,7 @@ class dustbin{
         rotate(angle);
         
        
-        rect(this.x,this.y,width,height);
+        rect(0,0,this.width,this.height);
        
         pop();
       }

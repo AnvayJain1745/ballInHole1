@@ -1,14 +1,13 @@
 class Ground{
     constructor( x,y,width,height) {
         var options = {
-            isStatic:true,
-            restitution:0.7,
-            friction:1.0,
-            density:1.2
+            isStatic:true
+            
         }
-        this.body = Bodies.rectangle(this.x,this.y,this.width,this.height,options);
         this.width=width;
         this.height=height
+        
+        this.body = Bodies.rectangle(x,y,width,height,options);
         
 
         World.add(world, this.body);
@@ -21,7 +20,7 @@ class Ground{
         translate(pos.x,pos.y);
         rotate(angle);
         
-       rect(this.x,this.y,width,height);
+       rect(0,0,this.width,this.height);
        
         pop();
       }
