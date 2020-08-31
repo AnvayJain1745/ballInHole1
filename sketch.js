@@ -23,9 +23,9 @@ function setup() {
 
   ball=new Ball(200,200,20);
   
-  dustbin1=new dustbin(840,675,150,10);
-  dustbin2=new dustbin(765,655,10,50);
-  dustbin3=new dustbin(915,655,10,50);
+  dustbin1=new dustbin(890,675,150,10);
+  dustbin2=new dustbin(775,655,10,50);
+  dustbin3=new dustbin(925,655,10,50);
    }
 
 
@@ -43,7 +43,7 @@ function draw() {
 
 function keyPressed() {
  if (keyCode === UP_ARROW) {
-	Matter.Body.applyForce(ball.body,ball.body.position,{y:38,x:37});
+	Matter.Body.applyForce(ball.body,ball.body.position,{y:37.5,x:37.5});
 	
 }
 }
