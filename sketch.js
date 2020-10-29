@@ -23,7 +23,7 @@ function setup() {
 
   ball=new Ball(200,200,20);
   
-  dustbin1=new dustbin(850,675,150,10);
+  dustbin1=new dustbin(900,675,150,10);
   dustbin2=new dustbin(820,655,10,50);
   dustbin3=new dustbin(955,655,10,50);
    }
